@@ -23,29 +23,29 @@ import re
 import os
 
 bot = Client("bot",
-             bot_token= "7088632591:AAEvdJBXacrQYmGqEUc1mpzdegX_5wRumw8",
+             bot_token= "6900621492:AAGaN7QnZVsCCUvzelbufLMqs9lxWWOsBqQ",
              api_id=24478182,
              api_hash= "a98b5be0127986be1cc2553dbd99765e")
 
 
 @bot.on_message(filters.command(["start"])& filters.user(ADMINS))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text(f"HELLO I AM TXT DOWNLOADER\n\n BOT MADE BY:- Tapori 2.0 😇")
+    editable = await m.reply_text(f"HELLO Baby🍷,\nI AM TXT DOWNLOADER\n\n BOT MADE BY:- Tapori 2.0 😇..")
 
 
-@bot.on_message(filters.command("rukja")& filters.user(ADMINS))
+@bot.on_message(filters.command("rukjaa")& filters.user(ADMINS))
 async def restart_handler(_, m):
     await m.reply_text("**ruk gaya**😜😜", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
-@bot.on_message(filters.command(["baby"])& filters.user(ADMINS))
+@bot.on_message(filters.command(["anu"])& filters.user(ADMINS))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text(f"**𝕋𝕆 ᴅᴏᴡɴʟᴏᴀᴅ ᴀ ᴛxᴛ ғɪʟᴇ 𝕤ᴇɴᴅ ʜᴇʀᴇ ⚡️**")
     input: Message = await bot.listen(editable.chat.id)
     if input.document:
         x = await input.download()
-        await bot.send_document(-1002054734777, x)
+        await bot.send_document(-1002000940862, x)
         await input.delete(True)
         file_name, ext = os.path.splitext(os.path.basename(x))
         credit = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
@@ -109,7 +109,7 @@ async def account_login(bot: Client, m: Message):
     except Exception:
             res = "UN"
     
-    await editable.edit("**Enter Your Name or send**")
+    await editable.edit("**𝔼ɴᴛᴇʀ Your Name or send**")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
@@ -169,13 +169,13 @@ async def account_login(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:                               
-                cc = f'**[🎬] Vid_ID:** {str(count).zfill(3)}.\n **Tɪᴛʟᴇ » {name1} ({res}) Tapori 🥷.mkv\n**Bᴀᴛᴄʜ** »** {b_name}\n\n**Downloaded by » {CR}**\n@taporibot_bot**'
-                cc1 = f'**[📕] Pdf_ID:** {str(count).zfill(3)}.**Tɪᴛʟᴇ » {name1} Tapori 🥷.pdf \n**Bᴀᴛᴄʜ** »**{b_name}\n\n**Downloaded by » {CR}**\n@taporibot_bot**'
+                cc = f'**[🎬]𝐕𝐈𝐃_𝐈𝐃 [🤖] ➤** {str(count).zfill(3)}.\n **[📝]𝐓𝐈𝐓𝐋𝐄  ➤** {𝗻𝗮𝗺𝗲𝟭} ({res})𓆩🖤𓆪Tapori 🥷.mkv\n\n **[♦]𝐁𝐀𝐓𝐂𝐇 ➤**{b_name}\n\n**Downloaded by ➤ {CR}**\n@taporibot_bot**'
+                cc1 = f'**[📕]𝐕𝐈𝐃_𝐈𝐃 [🤖] ➤** {str(count).zfill(3)}.\n **[📝]𝐓𝐈𝐓𝐋𝐄  ➤** {𝗻𝗮𝗺𝗲𝟭}𓆩🖤𓆪Tapori 🥷.pdf \n\n **[♦]𝐁𝐀𝐓𝐂𝐇 ➤**{b_name}\n\n**Downloaded by ➤ {CR}**\n@taporibot_bot**'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
                         copy = await bot.send_document(chat_id=m.chat.id,document=ka, caption=cc1)
-                        await copy.copy(chat_id = -1002054734777)
+                        await copy.copy(chat_id = )
                         count+=1
                         os.remove(ka)
                         time.sleep(1)
@@ -189,7 +189,7 @@ async def account_login(bot: Client, m: Message):
                         download_cmd = f"{cmd} -R 25 --fragment-retries 25"
                         os.system(download_cmd)
                         copy = await bot.send_document(chat_id=m.chat.id,document=f'{name}.pdf', caption=cc1)
-                        await copy.copy(chat_id = -1002054734777)
+                        await copy.copy(chat_id = )
                         count += 1
                         os.remove(f'{name}.pdf')
                     except FloodWait as e:
@@ -197,7 +197,7 @@ async def account_login(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    prog = await m.reply_text(f"**⏬️ 🄳🄾🅆🄽🄻🄾🄰🄳🄸🄽🄶 ⏬️... »**\n\n**🧾Name »** `{name}\n♻️Quality » {raw_text2}`\n\n**🔗URL »**`{url}`\n\n **🚩bot made by @taporibot_bot ❤️**")
+                    prog = await m.reply_text( f"**📥𝐃𝐎𝐖𝐍𝐋𝐎𝐃𝐈𝐍𝐆📥 » [🤖] **\n\n**📑𝐍𝐀𝐌𝐄 »** `{name}\n🍀𝐐𝐔𝐀𝐋𝐈𝐓𝐘 » {raw_text2}`\n\n**📎𝐔𝐑𝐋 :-** `{url}`")
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
                     await prog.delete(True)
